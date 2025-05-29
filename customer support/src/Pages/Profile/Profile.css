@@ -1,0 +1,50 @@
+/* src/Pages/Profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 97%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 170px;
+    margin-right: 970px;
+}
+
+.profile-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 5px 0;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle p {
+    margin: 0;
+}
+
+.toggle input {
+    margin-left: 10px;
+}

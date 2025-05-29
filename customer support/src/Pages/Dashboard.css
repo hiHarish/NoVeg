@@ -1,0 +1,79 @@
+.dashboard-container {
+    padding: 0px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ticket-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-column {
+    width: 48%;
+}
+
+.ticket-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.ticket-stat {
+    display: block;
+    padding: 30px;
+    margin-bottom: 20px; /* Increased spacing between tickets */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.ticket-stat h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.ticket-stat p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.total-tickets {
+    background-color: #4CAF50; /* Green */
+    width: 70%;
+}
+
+.open-tickets {
+    background-color: #2196F3; /* Blue */
+    width: 70%;
+}
+
+.closed-tickets {
+    background-color: #FF9800; /* Orange */
+}
+
+.pending-tickets {
+    background-color: #F44336; /* Red */
+}
+
+.driver-tickets {
+    background-color: #9C27B0; /* Purple */
+}
+
+.waiting-on-customer {
+    background-color: #795548; /* Brown */
+}
+
+.ticket-stats .ticket-row .ticket-stat:hover {
+    transform: translateY(-8px); /* Move box upward */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}

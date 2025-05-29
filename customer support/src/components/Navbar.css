@@ -1,0 +1,121 @@
+.header {
+  position: fixed;
+  top: -20px;
+  left: -17px;
+  height: 28px;
+  width: 100%;
+  padding: 25px 5%;
+  background: white;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #333;
+  font-weight: 500;
+  position: fixed;
+  left: 10px;
+  top: 11%;
+  transform: translateY(-50%);
+  height: 70px;
+}
+
+.navbar-title {
+  position: absolute;
+  left: 45%; /* Adjust this value to move it slightly left */
+  margin-top:4.8%;
+  transform: translate(-50%, -50%); /* Keep it centered vertically and horizontally */
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar-right {
+  display: flex; 
+  align-items: center; 
+  position: fixed;
+  right: 20px; 
+  top: 18px; 
+  z-index: 10; 
+}
+
+.profile-icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 60px;
+  
+  margin-top: 15px; 
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-top: -40px;
+}
+
+.logout-button {
+  background-color: #2a2b2f; 
+  color: white; 
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 5px; 
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  margin-top: 48px; 
+  margin-right: 60px; 
+}
+
+.logout-button:hover {
+  background-color: #4caf50; 
+}
+
+
+.login-button {
+  background-color: #2a2b2f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5p;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: -10px; 
+  margin-right: 100px; 
+  
+}
+
+.login-button:hover {
+  background-color: #4caf50; 
+}
+
+.auth-controls {
+  display: flex;
+  
+  align-items: center;
+  gap: 10px; /* Space between the profile icon and menu icon */
+}
+
+/* src/components/Navbar.css */
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar-image {
+  
+  width: 97%; /* Make the image responsive */
+  margin-top: 640px;
+  object-fit: cover; /* Ensure the image scales correctly */
+}

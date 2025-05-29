@@ -1,0 +1,93 @@
+/* 🌟 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dde8f0, #f3f6fa);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* 🎟️ Open Tickets Page */
+  .open-tickets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* 📄 Ticket Table */
+  .ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ticket-table th,
+  .ticket-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-table th {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .ticket-table tr:hover {
+    background: #e0eafc;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 📌 Back Button */
+  .back-button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    background: #008cdd;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    align-self: center;
+  }
+  
+  .back-button:hover {
+    background: #006bb7;
+    transform: scale(1.05);
+  }
+  
+  /* 🌐 Responsive Design */
+  @media (max-width: 1024px) {
+    .open-tickets-container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .open-tickets-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .ticket-table th,
+    .ticket-table td {
+      font-size: 14px;
+    }
+  }
+  

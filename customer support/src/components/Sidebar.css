@@ -1,0 +1,111 @@
+/* src/components/Sidebar.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed; /* Changed to fixed position */
+    left: -18px; /* Positioned at the left edge of the viewport */
+    height: 82%; /* Full height */
+    top: 58px; /* Start from the top */
+}
+
+.sidebar h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.sidebar a {
+    display: block;
+    color: #333;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.sidebar .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+.main-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-content .header input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.main-content .header .new-ticket {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust spacing between icon and text */
+  }
+  
+  .logout-icon {
+    font-size: 1.2em; /* Adjust icon size */
+  }
+  
+  .icon {
+    margin-right: 10px; /* Adds spacing between icon and text */
+    font-size: 1.2em;  /* Adjust icon size if needed */
+    position: relative;
+    top: 4px; /* Slightly move the icon downward */
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #007bff; /* Change the color for active links */
+  }
+
+  .container {
+    position: relative;
+    left: 110%;
+    bottom: 30px;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: -16px;
+    color: #000;
+}

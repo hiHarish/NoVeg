@@ -1,0 +1,127 @@
+/* src/pages/Login.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    
+}
+
+.login-container {
+    width: 300px;
+    margin: 120px auto;
+    padding: 59px;
+    top: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 15px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.login-btn:hover {
+    background-color: #45a049;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* src/pages/Login.css */
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Your existing CSS */
+.login-container {
+    width: 300px;
+    margin: 120px auto;
+    padding: 59px;
+    position: relative; /* Added for positioning the close button */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Rest of your existing CSS */
+.profile-icon-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10; /* Ensure the icon is above other content */
+}
+
+.profile-icon {
+    width: 40px; /* Adjust the size of the profile icon */
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-icon:hover {
+    opacity: 0.8; /* Add hover effect if desired */
+}

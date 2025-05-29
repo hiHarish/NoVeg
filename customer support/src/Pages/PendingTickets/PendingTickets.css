@@ -1,0 +1,100 @@
+/* 🎟️ Pending Tickets Page Styles */
+.pending-tickets-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    overflow-x: auto;
+  }
+  
+  .pending-tickets-page h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #2a5298;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* 🎯 Pending Tickets Table */
+  .pending-tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .pending-tickets-table th, 
+  .pending-tickets-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .pending-tickets-table th {
+    background: #2a5298;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .pending-tickets-table tr:hover {
+    background: #f3f6fa;
+    transition: background 0.3s ease;
+  }
+  
+  .pending-tickets-table td {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* 🎨 Alternating Row Colors */
+  .pending-tickets-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  /* 🔍 Search Bar */
+  .search-bar-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-bar {
+    padding: 8px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .search-bar:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+  }
+  
+  /* 🌐 Responsive Design */
+  @media (max-width: 768px) {
+    .pending-tickets-page {
+      padding: 15px;
+    }
+  
+    .pending-tickets-table {
+      font-size: 14px;
+    }
+  
+    .pending-tickets-table th, 
+    .pending-tickets-table td {
+      padding: 8px;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

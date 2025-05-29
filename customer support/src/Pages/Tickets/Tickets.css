@@ -1,0 +1,56 @@
+/* src/pages/Tickets.css */
+
+.tickets-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ticket {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 100%; /* Ensure the ticket takes up full width of the container */
+    max-width: 130px; /* Optional: limit the width to a specific size */
+    text-decoration: none; /* Remove default underline from links */
+}
+
+.row { 
+    display: flex; 
+    flex-direction: row; /* Arrange items in a single row */ 
+    justify-content: center; /* Center the items horizontally */ 
+    align-items: center; /* Center the items vertically */ 
+    gap: 40px; /* Add space between the items */
+    }
+
+.ticket:link,
+.ticket:visited,
+.ticket:hover,
+.ticket:active {
+    color: white; /* Ensure text color remains consistent */
+    text-decoration: none; /* Remove underline on hover and active states */
+}
+
+.customer-ticket {
+    background-color: #4CAF50; /* Green */
+}
+
+.delivery-ticket {
+    background-color: #FF9800; /* Orange */
+}
+
+.vendor-ticket {
+    background-color: #f45348; /* Red */
+}
+
+.ticket:hover {
+    transform: translateY(-8px); /* Move box upward */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}

@@ -1,0 +1,54 @@
+/* 🎟️ Total Tickets Container */
+.total-tickets-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 1300px;
+}
+
+/* 📄 Total Tickets Table */
+.total-tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.total-tickets-table th, 
+.total-tickets-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.total-tickets-table th {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.total-tickets-table td {
+    color: #555;
+}
+
+
+
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+    .total-tickets-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .total-tickets-container {
+        width: 90%;
+    }
+}

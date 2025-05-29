@@ -1,0 +1,76 @@
+/* 🌟 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dde8f0, #f3f6fa);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* 🚨 Waiting On Customer Page */
+  .waiting-on-customer-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow-x: auto;
+  }
+  
+
+  .back-btn:hover {
+    background-color: #006bb7;
+    transform: scale(1.05);
+  }
+  
+  /* 🗂️ Ticket Table */
+  .waiting-ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .waiting-ticket-table th, 
+  .waiting-ticket-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .waiting-ticket-table th {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .waiting-ticket-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .waiting-ticket-table td {
+    color: #555;
+  }
+  
+  /* 🌐 Responsive Design */
+  @media (max-width: 1024px) {
+    .waiting-on-customer-page {
+      width: 95%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .waiting-on-customer-page {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

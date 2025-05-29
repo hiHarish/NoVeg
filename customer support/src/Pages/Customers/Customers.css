@@ -1,0 +1,141 @@
+/* General table styling */
+table {
+    width: 100%;
+    max-width: 1000px;  /* Set a max-width to prevent stretching */
+    margin: 20px auto;  /* Center the table */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 6px 8px;  /* Reduce padding to make table more compact */
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word;  /* Allow long words to break and prevent overflow */
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;  /* Slightly smaller font size for headings */
+  }
+  
+  td {
+    background-color: #fff;
+    font-size: 12px;  /* Slightly smaller font size for data */
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Add a border around the table */
+  table {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust column width for better space utilization */
+  th:nth-child(1), td:nth-child(1) {
+    width: 10%;  /* First name column width */
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 10%;  /* Last name column width */
+  }
+  
+  th:nth-child(3), td:nth-child(3) {
+    width: 15%;  /* Email column width */
+  }
+  
+  th:nth-child(4), td:nth-child(4) {
+    width: 15%;  /* Street column width */
+  }
+  
+  th:nth-child(5), td:nth-child(5) {
+    width: 10%;  /* City column width */
+  }
+  
+  th:nth-child(6), td:nth-child(6) {
+    width: 8%;  /* State column width */
+  }
+  
+  th:nth-child(7), td:nth-child(7) {
+    width: 8%;  /* Zipcode column width */
+  }
+  
+  th:nth-child(8), td:nth-child(8) {
+    width: 10%;  /* Country column width */
+  }
+  
+  th:nth-child(9), td:nth-child(9) {
+    width: 10%;  /* Phone column width */
+  }
+  
+  th:nth-child(10), td:nth-child(10) {
+    width: 12%;  /* Order ID column width */
+  }
+  
+  th:nth-child(11), td:nth-child(11) {
+    width: 8%;  /* Status column width */
+  }
+  
+  th:nth-child(12), td:nth-child(12) {
+    width: 8%;  /* Amount column width */
+  }
+  
+  /* Add some spacing around the table container */
+  div {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the h1 */
+  h1 {
+    color: #333;
+    font-size: 20px;  /* Slightly smaller font size for h1 */
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .filter-container {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
