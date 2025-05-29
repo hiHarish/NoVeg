@@ -12,7 +12,7 @@ const Customer = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/orders");
+        const response = await axios.get("https://backend-7j5d.onrender.com/api/orders");
         if (response.data.success) {
           setOrders(response.data.data);
         } else {
