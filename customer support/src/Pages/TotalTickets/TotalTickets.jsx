@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import "./TotalTickets.css";
 
-const socket = io("http://localhost:3000"); // <-- FIXED: connect to root, not /api/tickets
+const socket = io("https://backend-7j5d.onrender.com"); // <-- FIXED: connect to root, not /api/tickets
 socket.on("connect", () => {
   console.log("Socket connected with id:", socket.id);
 });
@@ -19,7 +19,7 @@ const TotalTickets = () => {
   useEffect(() => {
     const fetchTickets = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/tickets");
+        const response = await fetch("https://backend-7j5d.onrender.com/api/tickets");
         const data = await response.json();
         if (data.success) {
           // Sort tickets by createdAt in descending order (LCFS)
