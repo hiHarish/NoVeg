@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { io } from "socket.io-client";
 import "./OpenTickets.css";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://backend-7j5d.onrender.com");
 
 const OpenTickets = () => {
   const [openTickets, setOpenTickets] = useState([]);
@@ -17,7 +17,7 @@ const OpenTickets = () => {
   useEffect(() => {
     const fetchOpenTickets = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/tickets");
+        const response = await fetch("https://backend-7j5d.onrender.com/api/tickets");
         const data = await response.json();
         if (data.success) {
           const filteredOpenTickets = data.tickets
