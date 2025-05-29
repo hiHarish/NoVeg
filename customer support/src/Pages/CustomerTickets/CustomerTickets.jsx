@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import "./CustomerTickets.css";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://backend-7j5d.onrender.com");
 
 const CustomerTickets = () => {
   const [tickets, setTickets] = useState([]);
@@ -16,7 +16,7 @@ const CustomerTickets = () => {
   useEffect(() => {
     const fetchTickets = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/tickets");
+        const response = await axios.get("https://backend-7j5d.onrender.com/api/tickets");
         if (response.data.success) {
           const sortedTickets = response.data.tickets.sort((a, b) =>
             new Date(b.createdAt) - new Date(a.createdAt)
@@ -75,7 +75,7 @@ const CustomerTickets = () => {
 
   const handleStatusChange = async (ticketId, newStatus) => {
     try {
-      const response = await axios.put(`http://localhost:3000/api/tickets/${ticketId}`, { status: newStatus });
+      const response = await axios.put(`https://backend-7j5d.onrender.com/api/tickets/${ticketId}`, { status: newStatus });
       if (response.data.success) {
         setTickets((prevTickets) => {
           const updatedTickets = prevTickets.map((ticket) =>
