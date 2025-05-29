@@ -8,7 +8,7 @@ const ClosedTickets = () => {
   useEffect(() => {
     const fetchClosedTickets = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/tickets");
+        const response = await fetch("https://backend-7j5d.onrender.com/api/tickets");
         const data = await response.json();
         if (data.success) {
           const closedTickets = data.tickets
