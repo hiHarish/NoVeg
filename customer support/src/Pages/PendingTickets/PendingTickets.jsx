@@ -3,7 +3,7 @@ import axios from "axios";
 import { io } from "socket.io-client";
 import "./PendingTickets.css";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://backend-7j5d.onrender.com");
 
 const PendingTickets = () => {
   const [pendingTickets, setPendingTickets] = useState([]);
@@ -17,7 +17,7 @@ const PendingTickets = () => {
   useEffect(() => {
     const fetchPendingTickets = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/tickets");
+        const response = await axios.get("https://backend-7j5d.onrender.com/api/tickets");
         if (response.data.success) {
           const pending = response.data.tickets
             .filter((ticket) => ticket.status === "pending")
